@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension Boilerplate",
+    "version": "3.0.1",
+    "action": {
+      "default_icon": "src/shared/images/icon-128.png",
+      "default_popup": "src/popup/popup.html?mode=popup"
+    },
+    "icons": {
+      "16": "src/shared/images/icon-16.png",
+      "32": "src/shared/images/icon-32.png",
+      "48": "src/shared/images/icon-48.png",
+      "128": "src/shared/images/icon-128.png"
+    },
+    "permissions": [
+      "tabs",
+      "contextMenus",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ],
+        "js": [
+          "src/shared/scripts/constants.helper.js",
+          "src/shared/scripts/chrome.helper.js",
+          "src/shared/scripts/keys.helper.js",
+          "src/shared/scripts/jquery.min.js",
+          "src/shared/scripts/logger.helper.js",
+          "src/shared/scripts/settings.helper.js",
+          "src/content/content.js"
+        ],
+        "css": []
+      }
+    ]
+  }

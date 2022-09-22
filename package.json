@@ -1,0 +1,27 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "3.0.1",
+  "description": "Chrome extension boiler plate that will save you time when you want to build a new chrome extension from the ground up.",
+  "main": "background.js",
+  "scripts": {
+    "start": "nodemon --watch app --exec \"npm run build\"",
+    "build": "gulp",
+    "build:prod": "gulp --production=true",
+    "zip": "gulp zip --production=true"
+  },
+  "author": "Gonzalo Melgar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-clean": "0.4.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-uglify": "3.0.2",
+    "gulp-zip": "5.1.0",
+    "nodemon": "^2.0.19",
+    "yargs": "^17.5.1"
+  }
+}

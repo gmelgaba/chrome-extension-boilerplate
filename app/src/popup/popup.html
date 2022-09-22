@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../shared/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="../shared/scripts/jquery.min.js"></script>
+  <script src="../shared/scripts/logger.helper.js"></script>
+  <script src="../shared/scripts/chrome.helper.js"></script>
+  <script src="scripts/popup.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>
+        <span class="header-text">Chrome extension</span>
+        <span class="header-text-orange">popup!</span>
+      </h3>
+    </div>
+    <hr>
+    <div class="jumbotron">
+      <p>This is the popup page! If you want you're extension have a cool menu while clicking the icon, this is the way to go.</p>
+    </div>
+    <div class="card card-left">
+      <div class="card-body">
+        <p>Reload the extension in the current page.</p>
+        <div id="reload" class="btn btn-warning">
+          <i class="fas fa-sync-alt"></i>
+          Reload extension
+        </div>
+      </div>
+    </div>
+    <div class="card card-right">
+      <div class="card-body">
+        <p>Access extension settings.</p>
+        <a class="btn btn-warning" href="../background/index.html" target="_blank">
+          <i class="fas fa-cog"></i>
+          Configuration
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

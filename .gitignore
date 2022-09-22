@@ -1,0 +1,11 @@
+# node dependencies
+node_modules
+
+# macOS files
+.DS_Store
+temp
+.tmp
+
+# build/zip directories
+build
+dist
